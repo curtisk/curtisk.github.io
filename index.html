@@ -1,110 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Curtisk.github.io : curtisk&#39;s github site" />
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <title>curtisk.github.io</title>
-    <!--[if lt IE 9]>
-      <script src="javascripts/html5shiv.js"></script>
+
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Curtisk.github.io : curtisk&#39;s github site" />
+  <title>curtisk.github.io</title>
+  <!--[if lt IE 9]>
+      <script src="javascripts/html5shiv.min.js"></script>
       <script src="javascripts/respond.min.js"></script>
     <![endif]-->
-    <script src="javascripts/jquery.js"></script>
-    <script src="javascripts/bootstrap.min.js"></script>
-  </head>
-  <body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+  <!-- custom styles -->
+  <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+</head>
+
+<body>
   <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K4DMP5"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K4DMP5');</script>
-<!-- End Google Tag Manager -->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-K4DMP5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K4DMP5');
+  </script>
+  <!-- End Google Tag Manager -->
 
-    <!-- HEADER -->
-    <nav class="navbar navbar-default" role="navigation">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
+  <!-- HEADER -->
+  <nav class="navbar navbar-light bg-light navbar-expand-lg">
     <a class="navbar-brand" href="http://curtisk.github.io/">curtisk.github.io</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="navbar-nav">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+          <div class="dropdown-menu">
+            <a href="https://github.com/curtisk/SalesforceDataDictionaryUtil" class="dropdown-item">C# Salesforce Data Dictionary Generator</a>
+            <a href="#" class="dropdown-item">More Coming soon...</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Random</a>
+          <div class="dropdown-menu">
+            <a href="./pdf/EventTest.pdf" class="dropdown-item">Test PDF!</a>
+            <div class="divider"></div>
+            <a href="#" class="dropdown-item">More Coming soon...</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav d-flex ml-auto">
+        <li><a id="forkme_banner" class="" href="https://github.com/curtisk">View on GitHub</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+  <!-- MAIN CONTENT -->
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      <h3>Welcome!</h3>
+      <p>This is largely just a placeholder, testing out github pages and using as a sandbox for various this and that.</p>
+      <p>Tested using google tag manager to track PDF clicks/views</p>
+      <p>Updated the plumbing Sept 2017 to play with bootstrap 4 beta</p>
+
+      <h3>
+        <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors
+        and Contributors</h3>
+
+      <p>
+        <a href="https://github.com/curtisk" class="user-mention">@curtisk</a>
+      </p>
+    </section>
   </div>
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="https://github.com/curtisk/SalesforceDataDictionaryUtil">C# Salesforce Data Dictionary Generator</a></li>
-          <li class="divider"></li>
-          <li><a href="#">More Coming soon...</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Random<b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="./pdf/EventTest.pdf">Test PDF!</a></li>
-          <li class="divider"></li>
-          <li><a href="#">More Coming soon...</a></li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a id="forkme_banner" href="https://github.com/curtisk">View on GitHub</a></li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-         <!-- <a id="forkme_banner" href="https://github.com/curtisk">View on GitHub</a> 
 
-          <h1 id="project_title"></h1>
-          <h2 id="project_tagline"></h2> -->
-        </header>
-    </div>
+  <!-- FOOTER  -->
+  <div id="footer_wrap" class="outer">
+    <footer class="inner">
+      <p>&copy; <b style="font-size:x-large">&infin;</b></p>
+    </footer>
+  </div>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome!</h3>
-<p>This is largely just a placeholder, testing out github pages and using as a sandbox for various this and that.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>
-  <a href="https://github.com/curtisk" class="user-mention">@curtisk</a>
-</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>&copy; 2015</p>
-      </footer>
-    </div>
-    <script type="text/javascript">
-      $(document).ready(function(){
-          //$('.dropdown-toggle').dropdown();
-      });
-    </script>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  
     ga('create', 'UA-53861922-1', 'auto');
     ga('send', 'pageview');
-
   </script>
-  </body>
+</body>
+
 </html>
