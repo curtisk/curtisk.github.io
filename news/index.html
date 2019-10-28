@@ -14,5 +14,10 @@
 </head>
 
 <body>Test Only</body>
-
+<script>
+    var intervalID = window.setInterval(sendToGTM, 5000);
+function sendToGTM(){
+    dataLayer.push({'event':'search-str-update','testDLV': 'Test' + Date.now()});
+}
+</script>
 </html>
