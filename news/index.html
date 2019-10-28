@@ -19,6 +19,7 @@
         var intervalID = window.setInterval(sendToGTM, 5000);
         function sendToGTM() {
             dataLayer.push({ 'event': 'search-str-update', 'testDLV': 'Test' + Date.now() });
+            alert('Test'+Date.now());
         }
     </script>
 </body>
